@@ -12,7 +12,7 @@ class CashRegister
   def add_item(item, amount, quantity = 1)
     self.total += amount * quantity
     @items.fill(item, @items.size, quantity)
-    @amounts.fill(amount, @amounts.size, quantity) #keep track of the last transaction amount
+    @amounts.fill(amount, @amounts.size, quantity)
   end
 
   def apply_discount
