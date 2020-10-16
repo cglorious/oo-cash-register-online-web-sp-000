@@ -25,7 +25,8 @@ class CashRegister
   end
 
   def void_last_transaction
-    self.total #- @amounts[@amounts.length - 1] []
+    self.total - (@amounts[@amounts.length - 1]).to_f
+    puts @amounts[@amounts.length - 1] #@amounts[1].to_f
     #self.total - amount of last item
   end
 
