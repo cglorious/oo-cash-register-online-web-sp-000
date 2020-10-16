@@ -10,7 +10,7 @@ class CashRegister
 
   def add_item(item, amount, quantity = 1)
     self.total += amount * quantity
-    @items << item #account for quantity
+    @items.fill(item, @items.size, quantity)
   end
 
   def apply_discount
