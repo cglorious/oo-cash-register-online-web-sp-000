@@ -25,8 +25,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    void_total = self.total - (@amounts[@amounts.length - 1]).to_f
-    void_total
+    self.total - (@amounts[@amounts.length - 1]).to_f
   end
 
 end
